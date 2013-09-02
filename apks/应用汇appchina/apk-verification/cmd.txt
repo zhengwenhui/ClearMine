@@ -1,0 +1,12 @@
+@Rem jarsigner命令格式：-verbose输出详细信息 -keystore密钥库位置 -signedjar要生成的文件 要签名的文件 密钥库文件
+@Rem keystorePath代表Keystore的绝对路径，如d:\workspace\keystore
+@Rem apkOut代表签名后的Apk路径，如D:\out.apk
+@Rem apkYyh代表收到的应用汇发送的验证apk，默认名称为VerifyApk.apk
+@Rem alias代表签名用的证书名称（创建Keystore时所填写），如xiaodong
+jarsigner -verbose -keystore [keystorePath] -signedjar [apkOut] [apkYyh] [alias]
+
+例如
+jarsigner -verbose -keystore d:\keystore2 -signedjar d:\my2.apk d:\unsigned.apk 123
+
+JDK下载地址
+http://www.oracle.com/technetwork/java/javase/downloads/jdk-6u25-download-346242.html

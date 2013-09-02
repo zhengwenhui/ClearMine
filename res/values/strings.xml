@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, ClearMineActivity!</string>
+    <string name="app_name">雷神扫雷</string>
+    <string name="main_layout">main_layout</string>
+    <string name="start">新游戏</string>
+    <string name="settings">设置</string>
+    <string name="charts">排行榜</string>
+    <string name="help">帮助</string>
+    <string name="exit">退出</string>
+    <string name="primary">初级 4X6</string>
+    <string name="middle">中级 6X9</string>
+    <string name="high">高级 8X12</string>
+    <string name="difficulty">难度</string>
+    <string name="sound">音效</string>
+    <string name="ok">确定</string>
+    <string name="lost">失败了！</string>
+    
+    <string name="help_textview">
+\n目标：  尽快找到雷区中的所有不是地雷的方块，而不许踩到地雷。打开方块的数字是几，则说明该方块周围的8个方块中有几个雷，如果挖开的是地雷，则输掉游戏。
+
+\n游戏区：计时器、开始新游戏、剩余地雷数、雷区。
+
+\n操作：
+	\n-----------------------------
+	\n	            长按                       单击  
+	\n未打开      打开                       标记
+	\n标记          打开                      未打开
+	\n打开          打开周围*      -
+	\n-----------------------------
+
+\n注：打开周围*：该打开的方块上显示有数字，为a
+	1.周围标记为地雷的方块个数等于a，则打开周围未打开的方块。
+	2.周围状态为未打开或标记的方块的个数和为a，则标记周围未打开的方块。	</string>
+
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:umadsdk="http://schemas.android.com/apk/res/com.youmi"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="@drawable/wallpaper_ra"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="3sp"
+        android:paddingRight="3sp" >
+
+        <TextView
+            android:id="@+id/timer"
+            style="@style/DarkShadow"
+            android:layout_width="100sp"
+            android:layout_height="45sp"
+            android:background="@drawable/btn_default_normal_holo_dark"
+            android:drawableLeft="@drawable/clock"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" >
+        </TextView>
+
+        <Button
+            android:id="@+id/open"
+            style="@style/DarkShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="45sp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:onClick="openButtonClick"
+            android:text="@string/start"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" >
+        </Button>
+
+        <TextView
+            android:id="@+id/mines"
+            style="@style/DarkShadow"
+            android:layout_width="100sp"
+            android:layout_height="45sp"
+            android:background="@drawable/btn_default_normal_holo_dark"
+            android:drawableLeft="@drawable/mine"
+            android:gravity="center"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/mainfiled"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/ad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wallpaper_ra"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/helpTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ismine"
+        android:src="@drawable/help_drawable" />
+    <!-- android:background="@drawable/btn_default_normal_holo_dark" -->
+
+</LinearLayout>

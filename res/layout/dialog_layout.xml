@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ismine"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/DarkShadow"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/mine"
+        android:gravity="center"
+        android:textColor="#ff00ff00"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1sp"
+        android:background="#ff00ff00" />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/DarkShadow"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10sp"
+        android:paddingTop="10sp"
+        android:text="@string/lost"
+        android:textColor="#ff00ff00"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/ok"
+        style="@style/DarkShadow"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:onClick="onOkButtonClick"
+        android:text="@string/ok"
+        android:textColor="#ff00ff00"
+        android:textSize="18sp" />
+
+</LinearLayout>

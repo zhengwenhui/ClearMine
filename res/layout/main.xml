@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wallpaper_ra"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chartString"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:textColor="#ff00ff00"
+        android:textSize="18sp" 
+        android:gravity="center"
+         style="@style/DarkShadow">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp" >
+
+        <Button
+            android:id="@+id/start"
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/button_selector"
+            android:onClick="onClickStart"
+            android:text="@string/start"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/set"
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/button_selector"
+            android:onClick="onClickSet"
+            android:text="@string/settings"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+
+        <!--
+              <Button
+            android:id="@+id/charts"
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/button_selector"
+            android:onClick="onClickCharts"
+            android:text="@string/charts"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+        -->
+
+        <Button
+            android:id="@+id/help"
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/button_selector"
+            android:onClick="onClickHelp"
+            android:text="@string/help"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/exit"
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:background="@drawable/button_selector"
+            android:focusable="true"
+            android:onClick="onClickExit"
+            android:text="@string/exit"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!--
+         <ListView
+        android:id="@+id/bang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+    -->
+
+</FrameLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wallpaper_ra"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ismine"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="@string/difficulty"
+            android:textColor="#ff00ff00"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/myRadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp" >
+
+            <RadioButton
+                android:id="@+id/primaryRadioButton"
+                style="@style/DarkShadow"
+                android:layout_width="fill_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/button_selector"
+                android:button="@drawable/radio_selector"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3sp"
+                android:text="@string/primary"
+                android:textColor="#ff00ff00" />
+
+            <RadioButton
+                android:id="@+id/middleRadioButton"
+                style="@style/DarkShadow"
+                android:layout_width="fill_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/button_selector"
+                android:button="@drawable/radio_selector"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3sp"
+                android:text="@string/middle"
+                android:textColor="#ff00ff00" />
+
+            <RadioButton
+                android:id="@+id/highRadioButton"
+                style="@style/DarkShadow"
+                android:layout_width="fill_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/button_selector"
+                android:button="@drawable/radio_selector"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="3sp"
+                android:text="@string/high"
+                android:textColor="#ff00ff00" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10sp"
+            android:text="@string/sound"
+            android:textColor="#ff00ff00"
+            android:textSize="24sp" />
+
+        <CheckBox
+            android:id="@+id/openSoundCheckBox"
+            style="@style/DarkShadow"
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/button_selector"
+            android:button="@drawable/checkbox_selector"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/sound"
+            android:textColor="#ff00ff00"
+            android:textSize="18sp" >
+        </CheckBox>
+    </LinearLayout>
+
+</LinearLayout>
